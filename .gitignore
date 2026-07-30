@@ -1,0 +1,33 @@
+# Build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# NuGet
+packages/
+
+# Publish
+publish/
+
+# ASP.NET
+wwwroot/uploads/
+
+# Secrets
+appsettings.Development.json
