@@ -45,6 +45,7 @@
     - Phân loại câu hỏi theo độ khó (Dễ/Trung bình/Khó).
 - [x] **Quản lý Đề thi (Exam):**
     - Tạo đề thi thủ công hoặc **Random** (lấy ngẫu nhiên câu hỏi từ ngân hàng).
+    - Xáo trộn câu trả lời trong đề thi
     - Cài đặt thời gian làm bài.
 - [x] **Quản lý Kết quả:** Xem bảng điểm chi tiết của từng sinh viên.
 
@@ -79,7 +80,7 @@ Hệ thống bao gồm các thực thể (Entities) chính:
 ### Bước 1: Clone dự án
 Mở Git Bash hoặc Terminal và chạy lệnh:
 ```bash
-git clone https://github.com/VanHauBbi/Online-Quiz-System-AspNetCore.git
+git clone https://github.com/Tah0206/QuizSystemOnline.git
 ```
 
 ### Bước 2: Cấu hình Database
