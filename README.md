@@ -82,8 +82,21 @@ Mở Git Bash hoặc Terminal và chạy lệnh:
 ```bash
 git clone https://github.com/Tah0206/QuizSystemOnline.git
 ```
+### Bước 2: Thiết lập Database
 
-### Bước 2: Cấu hình Database
+#### Phục hồi file `.BAK` vào SQL Server
+
+1. Mở **SQL Server Management Studio (SSMS)**
+2. Kết nối tới server của bạn
+3. Chuột phải vào **Databases > Restore Database…**
+4. Chọn **Device** và trỏ đến file `QLKhachSan.BAK` có trong project
+5. Nhấn **OK** để phục hồi database
+6. Sau khi hoàn tất bạn sẽ có database sẵn sàng để sử dụng
+
+> Việc restore file .BAK sẽ tạo ra database với đầy đủ bảng dữ liệu cần thiết cho website hoạt động bình thường.
+
+
+### Bước 3: Cấu hình Database
 Mở file `appsettings.json.`
 
 Tìm phần ConnectionStrings. Thay đổi Server Name thành tên Server của bạn:
@@ -95,7 +108,7 @@ Tìm phần ConnectionStrings. Thay đổi Server Name thành tên Server của 
 }
 ```
 
-### Bước 3: Cập nhật Cơ sở dữ liệu (Migrations)
+### Bước 4: Cập nhật Cơ sở dữ liệu (Migrations)
 Mở dự án bằng Visual Studio 2022.
 
 Vào menu: `Tools > NuGet Package Manager > Package Manager Console.`
@@ -106,7 +119,7 @@ Chạy lệnh sau để khởi tạo Database:
 Update-Database
 ```
 
-### Bước 4: Khởi chạy
+### Bước 5: Khởi chạy
 Nhấn tổ hợp phím **F5** hoặc nút ▶ Run trên thanh công cụ.
 
 Trình duyệt sẽ mở ra trang chủ.
